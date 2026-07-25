@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SkillConnect - Learn & Teach Skills</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#f4f6f9;
+}
+
+/* Header */
+
+header{
+    background:#2563eb;
+    color:white;
+    padding:20px 60px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+header h1{
+    font-size:32px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:25px;
+    font-size:18px;
+}
+
+nav a:hover{
+    color:#ffd54f;
+}
+
+/* Hero */
+
+.hero{
+    height:500px;
+    background:linear-gradient(135deg,#2563eb,#4f46e5);
+    color:white;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+.hero h2{
+    font-size:55px;
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:22px;
+    margin-bottom:30px;
+}
+
+.hero button{
+    padding:15px 35px;
+    border:none;
+    border-radius:8px;
+    background:white;
+    color:#2563eb;
+    font-size:18px;
+    cursor:pointer;
+}
+
+.hero button:hover{
+    background:#ddd;
+}
+
+/* Sections */
+
+section{
+    padding:60px;
+}
+
+section h2{
+    text-align:center;
+    margin-bottom:40px;
+    color:#222;
+}
+
+/* Cards */
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:25px;
+}
+
+.card{
+    background:white;
+    padding:25px;
+    border-radius:12px;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+    text-align:center;
+}
+
+.card h3{
+    margin-bottom:15px;
+}
+
+.card p{
+    margin-bottom:15px;
+}
+
+.card button{
+    background:#2563eb;
+    color:white;
+    border:none;
+    padding:10px 20px;
+    border-radius:6px;
+    cursor:pointer;
+}
+
+.card button:hover{
+    background:#1d4ed8;
+}
+
+/* Footer */
+
+footer{
+    background:#1f2937;
+    color:white;
+    text-align:center;
+    padding:25px;
+    margin-top:50px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<h1>SkillConnect</h1>
+
+<nav>
+
+<a href="#">Home</a>
+
+<a href="#">Explore Skills</a>
+
+<a href="login.html">Login</a>
+<a href="signup.html">Sign Up</a>
+
+
+
+</nav>
+
+</header>
+
+<div class="hero">
+
+<h2>Learn Any Skill.<br>Teach What You Know.</h2>
+
+<p>Connect with people and exchange skills for free.</p>
+
+<button>Get Started</button>
+
+</div>
+
+<section>
+
+<h2>Popular Skills</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>💻 Python</h3>
+<p>120 Teachers</p>
+<button>Explore</button>
+</div>
+
+<div class="card">
+<h3>🎨 Graphic Design</h3>
+<p>95 Teachers</p>
+<button>Explore</button>
+</div>
+
+<div class="card">
+<h3>📷 Photography</h3>
+<p>80 Teachers</p>
+<button>Explore</button>
+</div>
+
+<div class="card">
+<h3>🎸 Guitar</h3>
+<p>70 Teachers</p>
+<button>Explore</button>
+</div>
+
+<div class="card">
+<h3>🍳 Cooking</h3>
+<p>140 Teachers</p>
+<button>Explore</button>
+</div>
+
+<div class="card">
+<h3>📊 Excel</h3>
+<p>100 Teachers</p>
+<button>Explore</button>
+</div>
+
+<div class="card">
+<h3>🎬 Video Editing</h3>
+<p>90 Teachers</p>
+<button>Explore</button>
+</div>
+
+<div class="card">
+<h3>🏋 Fitness</h3>
+<p>75 Teachers</p>
+<button>Explore</button>
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h2>Featured Mentors</h2>
+
+<div class="grid">
+
+<div class="card">
+
+<h3>Aman Sharma ⭐⭐⭐⭐⭐</h3>
+
+<p><b>Teaches:</b> Python, Java</p>
+
+<p><b>Wants:</b> Photography</p>
+
+<button>View Profile</button>
+
+</div>
+
+<div class="card">
+
+<h3>Priya Patil ⭐⭐⭐⭐</h3>
+
+<p><b>Teaches:</b> Cooking</p>
+
+<p><b>Wants:</b> Excel</p>
+
+<button>View Profile</button>
+
+</div>
+
+<div class="card">
+
+<h3>Rahul Singh ⭐⭐⭐⭐⭐</h3>
+
+<p><b>Teaches:</b> Guitar</p>
+
+<p><b>Wants:</b> Python</p>
+
+<button>View Profile</button>
+
+</div>
+
+<div class="card">
+
+<h3>Neha Joshi ⭐⭐⭐⭐</h3>
+
+<p><b>Teaches:</b> Photoshop</p>
+
+<p><b>Wants:</b> Video Editing</p>
+
+<button>View Profile</button>
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+<h3>SkillConnect</h3>
+
+<p>Learn • Teach • Grow Together</p>
+
+<p>© 2026 All Rights Reserved</p>
+
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Signup - SkillConnect</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:#eef2f7;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+    padding:30px;
+}
+
+.container{
+    background:white;
+    width:450px;
+    padding:30px;
+    border-radius:10px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.2);
+}
+
+h1{
+    color:#2563eb;
+    text-align:center;
+    margin-bottom:10px;
+}
+
+p{
+    text-align:center;
+    color:gray;
+    margin-bottom:20px;
+}
+
+label{
+    font-weight:bold;
+}
+
+input,
+textarea{
+    width:100%;
+    padding:10px;
+    margin-top:5px;
+    margin-bottom:15px;
+    border:1px solid #ccc;
+    border-radius:5px;
+    font-size:15px;
+}
+
+textarea{
+    resize:none;
+}
+
+button{
+    width:100%;
+    padding:12px;
+    background:#2563eb;
+    color:white;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+    font-size:16px;
+}
+
+button:hover{
+    background:#1d4ed8;
+}
+
+.bottom-text{
+    text-align:center;
+    margin-top:20px;
+}
+
+.bottom-text a{
+    color:#2563eb;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Create Account</h1>
+
+<p>Join SkillConnect Today 🚀</p>
+
+<form onsubmit="window.location.href='dashboard.html'; return false;">
+
+
+<label>Full Name</label>
+<input type="text" placeholder="Enter your full name">
+
+<label>Email</label>
+<input type="email" placeholder="Enter your email">
+
+<label>Password</label>
+<input type="password" placeholder="Create a password">
+
+<label>City</label>
+<input type="text" placeholder="Enter your city">
+
+<label>Skills You Can Teach</label>
+<input type="text" placeholder="Example: HTML, Python">
+
+<label>Skills You Want to Learn</label>
+<input type="text" placeholder="Example: Photoshop, Java">
+
+<label>Short Bio</label>
+<textarea rows="4" placeholder="Tell others about yourself"></textarea>
+
+
+    <button type="submit">Create Account</button>
+
+</form>
+
+<div class="bottom-text">
+<div class="bottom-text">
+Already have an account?
+<a href="login.html">Login</a>
+</div>
+</div>
+
+</div>
+
+</body>
+</html>
