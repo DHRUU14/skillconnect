@@ -1,314 +1,514 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>SkillConnect - Learn & Teach Skills</title>
 
-<style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:Arial, Helvetica, sans-serif;
-}
+    <title>SkillConnect</title>
 
-body{
-    background:#f4f6f9;
-}
+    <link rel="stylesheet" href="style.css">
 
-/* Header */
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-header{
-    background:#2563eb;
-    color:white;
-    padding:20px 60px;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-}
-
-header h1{
-    font-size:32px;
-}
-
-nav a{
-    color:white;
-    text-decoration:none;
-    margin-left:25px;
-    font-size:18px;
-}
-
-nav a:hover{
-    color:#ffd54f;
-}
-
-/* Hero */
-
-.hero{
-    height:500px;
-    background:linear-gradient(135deg,#2563eb,#4f46e5);
-    color:white;
-
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
-    text-align:center;
-}
-
-.hero h2{
-    font-size:55px;
-    margin-bottom:20px;
-}
-
-.hero p{
-    font-size:22px;
-    margin-bottom:30px;
-}
-
-.hero button{
-    padding:15px 35px;
-    border:none;
-    border-radius:8px;
-    background:white;
-    color:#2563eb;
-    font-size:18px;
-    cursor:pointer;
-}
-
-.hero button:hover{
-    background:#ddd;
-}
-
-/* Sections */
-
-section{
-    padding:60px;
-}
-
-section h2{
-    text-align:center;
-    margin-bottom:40px;
-    color:#222;
-}
-
-/* Cards */
-
-.grid{
-    display:grid;
-    grid-template-columns:repeat(4,1fr);
-    gap:25px;
-}
-
-.card{
-    background:white;
-    padding:25px;
-    border-radius:12px;
-    box-shadow:0 5px 15px rgba(0,0,0,.1);
-    text-align:center;
-}
-
-.card h3{
-    margin-bottom:15px;
-}
-
-.card p{
-    margin-bottom:15px;
-}
-
-.card button{
-    background:#2563eb;
-    color:white;
-    border:none;
-    padding:10px 20px;
-    border-radius:6px;
-    cursor:pointer;
-}
-
-.card button:hover{
-    background:#1d4ed8;
-}
-
-/* Footer */
-
-footer{
-    background:#1f2937;
-    color:white;
-    text-align:center;
-    padding:25px;
-    margin-top:50px;
-}
-
-</style>
-
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
 
 <body>
 
-<header>
+<div class="blur blur1"></div>
+<div class="blur blur2"></div>
 
-<h1>SkillConnect</h1>
+<header>
 
 <nav>
 
-<a href="#">Home</a>
+<div class="logo">
 
-<a href="#">Explore Skills</a>
+<h2>⚡ SkillConnect</h2>
 
-<a href="login.html">Login</a>
-<a href="signup.html">Sign Up</a>
+</div>
 
+<ul>
 
+<li><a href="#">Home</a></li>
+
+<li><a href="#skills">Skills</a></li>
+
+<li><a href="#profiles">Community</a></li>
+
+<li><a href="#features">Features</a></li>
+
+<li><a href="#contact">Contact</a></li>
+
+</ul>
+
+<div class="nav-buttons">
+
+<a href="login.html" class="login-btn">Login</a>
+
+<a href="signup.html" class="signup-btn">Sign Up</a>
+
+</div>
 
 </nav>
 
 </header>
 
-<div class="hero">
+<section class="hero">
 
-<h2>Learn Any Skill.<br>Teach What You Know.</h2>
+<div class="hero-left">
 
-<p>Connect with people and exchange skills for free.</p>
+<span class="tag">
 
-<button>Get Started</button>
+🚀 India's Modern Skill Sharing Platform
+
+</span>
+
+<h1>
+
+Share What You Know.
+<br>
+Learn What You Don't.
+
+</h1>
+
+<p>
+
+Join a growing community where students, creators and professionals
+exchange real-world skills, collaborate on projects and build
+meaningful connections through learning.
+
+</p>
+
+<div class="email-box">
+
+<input
+type="email"
+placeholder="Enter your email address">
+
+<a href="signup.html">
+
+Get Started →
+
+</a>
 
 </div>
 
-<section>
+<div class="hero-info">
+
+<span>✓ Free Forever</span>
+
+<span>✓ Community Driven</span>
+
+<span>✓ No Spam</span>
+
+</div>
+
+</div>
+
+<div class="hero-right">
+
+<img src="images/hero.png" alt="SkillConnect">
+
+</div>
+
+</section>
+
+<section class="stats">
+
+<div class="stat-card">
+
+<h2>500+</h2>
+
+<p>Members</p>
+
+</div>
+
+<div class="stat-card">
+
+<h2>150+</h2>
+
+<p>Skills</p>
+
+</div>
+
+<div class="stat-card">
+
+<h2>1200+</h2>
+
+<p>Connections</p>
+
+</div>
+
+<div class="stat-card">
+
+<h2>4.9★</h2>
+
+<p>User Rating</p>
+
+</div>
+
+</section>
+
+<section id="skills" class="skills">
 
 <h2>Popular Skills</h2>
 
-<div class="grid">
+<div class="skill-container">
 
-<div class="card">
-<h3>💻 Python</h3>
-<p>120 Teachers</p>
-<button>Explore</button>
-</div>
+<div class="skill">🐍 Python</div>
 
-<div class="card">
-<h3>🎨 Graphic Design</h3>
-<p>95 Teachers</p>
-<button>Explore</button>
-</div>
+<div class="skill">☕ Java</div>
 
-<div class="card">
-<h3>📷 Photography</h3>
-<p>80 Teachers</p>
-<button>Explore</button>
-</div>
+<div class="skill">🎨 Photoshop</div>
 
-<div class="card">
-<h3>🎸 Guitar</h3>
-<p>70 Teachers</p>
-<button>Explore</button>
-</div>
+<div class="skill">🌐 HTML</div>
 
-<div class="card">
-<h3>🍳 Cooking</h3>
-<p>140 Teachers</p>
-<button>Explore</button>
-</div>
+<div class="skill">🎯 CSS</div>
 
-<div class="card">
-<h3>📊 Excel</h3>
-<p>100 Teachers</p>
-<button>Explore</button>
-</div>
+<div class="skill">⚡ JavaScript</div>
 
-<div class="card">
-<h3>🎬 Video Editing</h3>
-<p>90 Teachers</p>
-<button>Explore</button>
-</div>
+<div class="skill">☁ AWS</div>
 
-<div class="card">
-<h3>🏋 Fitness</h3>
-<p>75 Teachers</p>
-<button>Explore</button>
-</div>
+<div class="skill">🐳 Docker</div>
+
+<div class="skill">📊 Excel</div>
+
+<div class="skill">🎬 Video Editing</div>
 
 </div>
 
 </section>
 
-<section>
+<section id="profiles" class="profiles">
 
-<h2>Featured Mentors</h2>
+<h2>Featured Members</h2>
 
-<div class="grid">
+<div class="profile-container">
 
-<div class="card">
+<div class="profile-card">
 
-<h3>Aman Sharma ⭐⭐⭐⭐⭐</h3>
+<img src="https://i.pravatar.cc/150?img=11">
 
-<p><b>Teaches:</b> Python, Java</p>
+<h3>Atharva Kumavat</h3>
 
-<p><b>Wants:</b> Photography</p>
+<div class="rating">⭐⭐⭐⭐⭐ <span>4.9</span></div>
 
-<button onclick="location.href='profile.html'">
-    View Profile
-</button>
+<div class="rating">
+⭐⭐⭐⭐⭐ <span>4.9</span>
+</div>
+
+<p>Python • Java</p>
+
+<div class="location">
+📍 Pune, India
+</div>
+
+<div class="location">📍 Pune, India</div>
+
+<a href="profile-atharva.html">
+
+View Profile
+
+</a>
 
 </div>
 
-<div class="card">
+<div class="profile-card">
 
-<h3>Priya Patil ⭐⭐⭐⭐</h3>
+<img src="https://i.pravatar.cc/150?img=15">
 
-<p><b>Teaches:</b> Cooking</p>
+<h3>Aman Sharma</h3>
 
-<p><b>Wants:</b> Excel</p>
+<div class="rating">
+⭐⭐⭐⭐☆ <span>4.8</span>
+</div>
 
-<button onclick="location.href='profile.html'">
-    View Profile
-</button>
+<div class="rating">
+⭐⭐⭐⭐☆ <span>4.8</span>
+</div>
+
+<p>Photography • Photoshop</p>
+
+<div class="location">
+📍 Mumbai, India
+</div>
+
+<div class="location">
+📍 Mumbai, India
+</div>
+
+<a href="profile-aman.html">
+
+View Profile
+
+</a>
 
 </div>
 
-<div class="card">
+<div class="profile-card">
 
-<h3>Rahul Singh ⭐⭐⭐⭐⭐</h3>
+<img src="https://i.pravatar.cc/150?img=32">
 
-<p><b>Teaches:</b> Guitar</p>
+<h3>Dhruv Patil</h3>
 
-<p><b>Wants:</b> Python</p>
-
-<button onclick="location.href='profile.html'">
-    View Profile
-</button>
-
+<div class="rating">
+⭐⭐⭐⭐⭐ <span>5.0</span>
 </div>
 
-<div class="card">
+<p>Cloud • AWS</p>
 
-<h3>Neha Joshi ⭐⭐⭐⭐</h3>
+<div class="location">
+📍 Pune, India
+</div>
 
-<p><b>Teaches:</b> Photoshop</p>
+<a href="profile-dhruv.html">
 
-<p><b>Wants:</b> Video Editing</p>
+View Profile
 
-<button onclick="location.href='profile.html'">
-    View Profile
-</button>
+</a>
 
 </div>
 
 </div>
 
 </section>
+<!-- HOW IT WORKS -->
 
-<footer>
+<section class="how-it-works" id="features">
 
-<h3>SkillConnect</h3>
+    <h2>How SkillConnect Works</h2>
 
-<p>Learn • Teach • Grow Together</p>
+    <p class="section-subtitle">
+        Learn, teach and connect in just three simple steps.
+    </p>
 
-<p>© 2026 All Rights Reserved</p>
+    <div class="steps">
+
+        <div class="step-card">
+
+            <div class="step-icon">
+    <i class="fa-solid fa-user"></i>
+</div>
+
+            <h3>Create Profile</h3>
+
+            <p>
+                Sign up, showcase your skills and tell others what you can teach or what you want to learn.
+            </p>
+
+        </div>
+
+        <div class="step-card">
+
+            <div class="step-icon">
+    <i class="fa-solid fa-magnifying-glass"></i>
+</div>
+
+            <h3>Find Skills</h3>
+
+            <p>
+                Explore hundreds of skilled members and discover people who match your interests.
+            </p>
+
+        </div>
+
+        <div class="step-card">
+
+            <div class="step-icon">💬</div>
+
+            <h3>Connect & Learn</h3>
+
+            <p>
+                Chat, collaborate, exchange knowledge and grow together through real conversations.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- WHY CHOOSE US -->
+
+<section class="why">
+
+    <h2>Why Choose SkillConnect?</h2>
+    <!-- TESTIMONIALS -->
+
+<section class="testimonials">
+
+    <h2>What Our Community Says</h2>
+
+    <p class="section-subtitle">
+        Trusted by students, developers and creative professionals.
+    </p>
+
+    <div class="testimonial-container">
+
+        <div class="testimonial-card">
+
+            <div class="stars">
+                ★★★★★
+            </div>
+
+            <p>
+                "SkillConnect helped me find a Java mentor within days.
+                The platform is simple and easy to use."
+            </p>
+
+            <h4>Atharva Kumavat</h4>
+
+            <span>Java Learner</span>
+
+        </div>
+
+        <div class="testimonial-card">
+
+            <div class="stars">
+                ★★★★★
+            </div>
+
+            <p>
+                "I improved my Photoshop skills by learning directly
+                from experienced creators."
+            </p>
+
+            <h4>Aman Sharma</h4>
+
+            <span>Designer</span>
+
+        </div>
+
+        <div class="testimonial-card">
+
+            <div class="stars">
+                ★★★★★
+            </div>
+
+            <p>
+                "SkillConnect made it easy to connect with cloud learners
+                and exchange AWS knowledge."
+            </p>
+
+            <h4>Dhruv Patil</h4>
+
+            <span>Cloud Enthusiast</span>
+
+        </div>
+
+    </div>
+
+</section>
+<section class="cta">
+
+    <h2>Ready to Share Your Skills?</h2>
+
+    <p>
+        Join SkillConnect today and become part of a growing community
+        of learners and mentors.
+    </p>
+
+    <a href="signup.html">
+        Get Started Today →
+    </a>
+
+</section>
+
+    <p class="section-subtitle">
+
+        Everything you need to learn, teach and grow together.
+
+    </p>
+
+    <div class="why-container">
+
+        <div class="why-card">
+
+            <i class="fa-solid fa-bolt"></i>
+
+            <h3>Fast & Easy</h3>
+
+            <p>Find skilled people within seconds.</p>
+
+        </div>
+
+        <div class="why-card">
+
+            <i class="fa-solid fa-shield-halved"></i>
+
+            <h3>Secure Platform</h3>
+
+            <p>Safe communication and trusted profiles.</p>
+
+        </div>
+
+        <div class="why-card">
+
+            <i class="fa-solid fa-earth-americas"></i>
+
+            <h3>Community Driven</h3>
+
+            <p>Built for students, freelancers and professionals.</p>
+
+        </div>
+
+    </div>
+
+</section>
+<footer id="contact">
+
+    <div class="footer-logo">
+
+        <h2>⚡ SkillConnect</h2>
+
+        <p>
+            Learn. Teach. Grow Together.
+        </p>
+
+    </div>
+
+    <div class="footer-links">
+
+        <h3>Quick Links</h3>
+
+        <a href="#">Home</a>
+        <a href="#skills">Skills</a>
+        <a href="#profiles">Community</a>
+        <a href="#features">Features</a>
+
+    </div>
+
+    <div class="footer-links">
+
+        <h3>Resources</h3>
+
+        <a href="#">FAQ</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms & Conditions</a>
+
+    </div>
+
+    <div class="footer-links">
+
+        <h3>Follow Us</h3>
+
+        <a href="#">GitHub</a>
+        <a href="#">LinkedIn</a>
+        <a href="#">Instagram</a>
+
+    </div>
 
 </footer>
 
+<div class="copyright">
+    © 2026 SkillConnect. All Rights Reserved.
+</div>
 </body>
+
 </html>
