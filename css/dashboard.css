@@ -13,47 +13,196 @@ body{
 /* Sidebar */
 
 .sidebar{
-    width:260px;
-    height:100vh;
-    background:#2563eb;
-    color:white;
+
+    width:220px;
+    
+    height:calc(100vh - 40px);
+    
     position:fixed;
-    top:0;
-    left:0;
-    padding-top:20px;
-}
+    
+    top:20px;
+    
+    left:20px;
+    
+    background:linear-gradient(180deg,#0f172a,#1e293b);
+    
+    border:1px solid rgba(255,255,255,.08);
+    
+    border-radius:28px;
+    
+    padding:25px 18px;
+    
+    color:white;
+    
+    box-shadow:0 25px 55px rgba(15,23,42,.35);
+    
+    display:flex;
+    
+    flex-direction:column;
+    
+    overflow:hidden;
+    
+    }
 
 .sidebar h2{
-    text-align:center;
-    margin-bottom:30px;
+
+font-size:28px;
+
+font-weight:700;
+
+text-align:center;
+
+margin-bottom:8px;
+
+letter-spacing:.5px;
+
 }
+/* ===========================
+   Logo Section
+=========================== */
+
+.logo{
+
+    text-align:center;
+    
+    margin-bottom:35px;
+    
+    }
+    
+    .logo-icon{
+    
+    width:65px;
+    
+    height:65px;
+    
+    margin:0 auto 15px;
+    
+    border-radius:20px;
+    
+    background:rgba(255,255,255,.18);
+    
+    display:flex;
+    
+    align-items:center;
+    
+    justify-content:center;
+    
+    font-size:30px;
+    
+    backdrop-filter:blur(12px);
+    
+    box-shadow:0 10px 25px rgba(0,0,0,.18);
+    
+    }
+    
+    .logo p{
+    
+    font-size:13px;
+    
+    opacity:.85;
+    
+    margin-top:8px;
+    
+    letter-spacing:.5px;
+    
+    }
+/* ===========================
+   Navigation
+=========================== */
 
 .sidebar ul{
+
     list-style:none;
-}
-
-.sidebar ul li{
-    padding:18px 25px;
-    cursor:pointer;
-    transition:0.3s;
-}
-
-.sidebar ul li:hover{
-    background:#1d4ed8;
-}
-
-.sidebar ul li a{
+    
+    display:flex;
+    
+    flex-direction:column;
+    
+    gap:10px;
+    
+    flex:1;
+    
+    }
+    
+    .sidebar ul li{
+    
+    border-radius:18px;
+    
+    transition:.35s;
+    
+    overflow:hidden;
+    
+    }
+    
+    .sidebar ul li a{
+    
+    display:flex;
+    
+    align-items:center;
+    
+    gap:15px;
+    
+    padding:14px 18px;
+    
     color:white;
+    
     text-decoration:none;
-    display:block;
-}
+    
+    font-weight:500;
+    
+    transition:.35s;
+    
+    border-radius:18px;
+    
+    }
+    
+    .sidebar ul li a i{
+    
+    font-size:18px;
+    
+    width:22px;
+    
+    text-align:center;
+    
+    }
+    
+    .sidebar ul li:hover a{
+    
+    background:rgba(255,255,255,.18);
+    
+    transform:translateX(8px);
+    
+    }
+    /* Active Menu */
 
+    .sidebar ul li.active a{
+
+        background:linear-gradient(135deg,#2563eb,#3b82f6);
+        
+        color:white;
+        
+        font-weight:600;
+        
+        box-shadow:0 12px 25px rgba(37,99,235,.45);
+        
+        }
+        
+        .sidebar ul li.active a i{
+        
+        color:white;
+        
+        }
+    
+    
 /* Main */
 
 .main{
+
     margin-left:260px;
-    width:100%;
-}
+    
+    width:calc(100% - 260px);
+    
+    }
 
 /* Top Bar */
 
@@ -471,23 +620,63 @@ button:hover{
     font-weight:600;
     
     }
-.skills{
-    margin-top:30px;
-    background:white;
-    padding:20px;
-    border-radius:10px;
-    box-shadow:0 5px 10px rgba(0,0,0,0.1);
-}
+    .skills{
 
-.skills span{
-    display:inline-block;
-    background:#2563eb;
-    color:white;
-    padding:8px 15px;
-    margin:8px;
-    border-radius:20px;
-}
-
+        margin-top:35px;
+        
+        background:white;
+        
+        padding:30px;
+        
+        border-radius:25px;
+        
+        box-shadow:0 15px 35px rgba(0,0,0,.08);
+        
+        }
+        
+        .skills h2{
+        
+        margin-bottom:25px;
+        
+        font-size:28px;
+        
+        color:#1e293b;
+        
+        }
+        
+        .skills span{
+        
+        display:inline-block;
+        
+        padding:12px 22px;
+        
+        margin:10px;
+        
+        border-radius:40px;
+        
+        font-size:15px;
+        
+        font-weight:600;
+        
+        cursor:pointer;
+        
+        color:white;
+        
+        background:linear-gradient(135deg,#2563eb,#06b6d4);
+        
+        transition:.35s;
+        
+        box-shadow:0 10px 20px rgba(37,99,235,.20);
+        
+        }
+        
+        .skills span:hover{
+        
+        transform:translateY(-5px) scale(1.05);
+        
+        box-shadow:0 15px 30px rgba(37,99,235,.35);
+        
+        }
 
 button{
 
@@ -609,3 +798,324 @@ button{
         color:#888;
         
         }
+        /* ===========================
+   Trending Skills
+=========================== */
+
+.trending{
+
+    margin-top:35px;
+    
+    background:white;
+    
+    padding:30px;
+    
+    border-radius:25px;
+    
+    box-shadow:0 15px 35px rgba(0,0,0,.08);
+    
+    }
+    
+    .trending h2{
+    
+    margin-bottom:25px;
+    
+    font-size:28px;
+    
+    color:#1e293b;
+    
+    }
+    
+    .trending-skills{
+    
+    display:flex;
+    
+    flex-wrap:wrap;
+    
+    gap:18px;
+    
+    }
+    
+    .trending-skills span{
+    
+    padding:12px 22px;
+    
+    border-radius:40px;
+    
+    font-weight:600;
+    
+    color:white;
+    
+    background:linear-gradient(135deg,#7c3aed,#3b82f6);
+    
+    cursor:pointer;
+    
+    transition:.35s;
+    
+    box-shadow:0 10px 20px rgba(59,130,246,.25);
+    
+    }
+    
+    .trending-skills span:hover{
+    
+    transform:translateY(-5px) scale(1.08);
+    
+    box-shadow:0 18px 30px rgba(59,130,246,.35);
+    
+    }
+    /* ===========================
+   Bottom Dashboard Grid
+=========================== */
+
+.bottom-grid{
+
+    display:grid;
+    
+    grid-template-columns:1fr 1.2fr;
+    
+    gap:30px;
+    
+    margin-top:35px;
+    
+    }
+    
+    .skill-day,
+    .analytics{
+    
+    background:white;
+    
+    padding:30px;
+    
+    border-radius:25px;
+    
+    box-shadow:0 15px 35px rgba(0,0,0,.08);
+    
+    }
+    
+    .skill-day h2,
+    .analytics h2{
+    
+    margin-bottom:20px;
+    
+    color:#1e293b;
+    
+    }
+    
+    .skill-day h3{
+    
+    font-size:34px;
+    
+    margin-bottom:15px;
+    
+    color:#2563eb;
+    
+    }
+    
+    .skill-day p{
+    
+    line-height:1.8;
+    
+    color:#555;
+    
+    margin-bottom:25px;
+    
+    }
+    
+    .analytics-grid{
+    
+    display:grid;
+    
+    grid-template-columns:repeat(2,1fr);
+    
+    gap:18px;
+    
+    }
+    
+    .analytics-card{
+    
+    padding:25px;
+    
+    border-radius:18px;
+    
+    background:linear-gradient(135deg,#eff6ff,#ffffff);
+    
+    text-align:center;
+    
+    transition:.35s;
+    
+    border:1px solid rgba(37,99,235,.10);
+    
+    }
+    
+    .analytics-card:hover{
+    
+    transform:translateY(-8px);
+    
+    box-shadow:0 15px 30px rgba(37,99,235,.15);
+    
+    }
+    
+    .analytics-card h3{
+    
+    font-size:32px;
+    
+    color:#2563eb;
+    
+    margin-bottom:10px;
+    
+    }
+    
+    .analytics-card span{
+    
+    color:#64748b;
+    
+    font-size:15px;
+    
+    }
+    /* ===========================
+   Dashboard Animations
+=========================== */
+
+@keyframes fadeUp{
+
+    0%{
+    
+    opacity:0;
+    
+    transform:translateY(30px);
+    
+    }
+    
+    100%{
+    
+    opacity:1;
+    
+    transform:translateY(0);
+    
+    }
+    
+    }
+    
+    .welcome-banner{
+    
+    animation:fadeUp .7s ease;
+    
+    }
+    
+    .cards{
+    
+    animation:fadeUp .9s ease;
+    
+    }
+    
+    .skills{
+    
+    animation:fadeUp 1.1s ease;
+    
+    }
+    
+    .trending{
+    
+    animation:fadeUp 1.3s ease;
+    
+    }
+    
+    .activity{
+    
+    animation:fadeUp 1.5s ease;
+    
+    }
+    
+    .bottom-grid{
+    
+    animation:fadeUp 1.7s ease;
+    
+    }
+    /* ===========================
+   Sidebar Footer
+=========================== */
+
+.sidebar-footer{
+
+    padding-top:20px;
+    
+    border-top:1px solid rgba(255,255,255,.20);
+    
+    margin-top:20px;
+    
+    }
+    
+    .sidebar-footer a{
+    
+    display:flex;
+    
+    align-items:center;
+    
+    gap:15px;
+    
+    padding:14px 18px;
+    
+    border-radius:18px;
+    
+    color:white;
+    
+    text-decoration:none;
+    
+    font-weight:500;
+    
+    transition:.35s;
+    
+    }
+    
+    .sidebar-footer a:hover{
+    
+    background:rgba(255,255,255,.18);
+    
+    transform:translateX(8px);
+    
+    }
+    /* ===========================
+   Sidebar Decorative Circles
+=========================== */
+
+.sidebar::before{
+
+    content:"";
+    
+    position:absolute;
+    
+    width:180px;
+    
+    height:180px;
+    
+    background:rgba(37,99,235,.18);
+    
+    border-radius:50%;
+    
+    top:-60px;
+    
+    right:-60px;
+    
+    filter:blur(10px);
+    
+    }
+    
+    .sidebar::after{
+    
+    content:"";
+    
+    position:absolute;
+    
+    width:140px;
+    
+    height:140px;
+    
+    background:rgba(255,255,255,.05);
+    
+    border-radius:50%;
+    
+    bottom:-40px;
+    
+    left:-40px;
+    
+    }
