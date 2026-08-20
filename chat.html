@@ -3,93 +3,632 @@
 
 <head>
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Chat - SkillConnect</title>
+    <title>Chat - SkillConnect</title>
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
-<link rel="stylesheet" href="css/chat.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/chat.css">
 
 </head>
 
+
 <body>
+
+
+<!-- SIDEBAR -->
 
 <div class="sidebar">
 
-<h2>SkillConnect</h2>
+    <div class="logo">
 
-<ul>
+        <div class="logo-icon">
+            <i class="fa-solid fa-link"></i>
+        </div>
 
-<li><a href="dashboard.html"><i class="fa-solid fa-house"></i> Dashboard</a></li>
+        <h2>SkillConnect</h2>
 
-<li><a href="#"><i class="fa-solid fa-magnifying-glass"></i> Search Skills</a></li>
+        <span>Skill Exchange Platform</span>
 
-<li><a href="requests.html"><i class="fa-solid fa-envelope"></i> Requests</a></li>
+    </div>
 
-<li><a href="chat.html"><i class="fa-solid fa-comments"></i> Chat</a></li>
 
-<li><a href="profile-dhruv.html"><i class="fa-solid fa-user"></i> My Profile</a></li>
+    <ul>
 
-<li><a href="#"><i class="fa-solid fa-gear"></i> Settings</a></li>
+        <li>
+            <a href="dashboard.html">
+                <i class="fa-solid fa-house"></i>
+                Dashboard
+            </a>
+        </li>
 
-<li><a href="index.html"><i class="fa-solid fa-right-from-bracket"></i> Logout</a></li>
 
-</ul>
+        <li>
+            <a href="search.html">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                Search Skills
+            </a>
+        </li>
+
+
+        <li>
+            <a href="requests.html">
+                <i class="fa-solid fa-envelope"></i>
+                Requests
+            </a>
+        </li>
+
+
+        <li class="active">
+            <a href="chat.html">
+                <i class="fa-solid fa-comments"></i>
+                Chat
+            </a>
+        </li>
+
+
+        <li>
+            <a href="profile-dhruv.html">
+                <i class="fa-solid fa-user"></i>
+                My Profile
+            </a>
+        </li>
+
+
+        <li>
+            <a href="settings.html">
+                <i class="fa-solid fa-gear"></i>
+                Settings
+            </a>
+        </li>
+
+    </ul>
+
+
+    <div class="sidebar-footer">
+
+        <a href="index.html">
+
+            <i class="fa-solid fa-right-from-bracket"></i>
+
+            Logout
+
+        </a>
+
+    </div>
 
 </div>
+
+
+
+<!-- MAIN -->
 
 <div class="main">
 
-<div class="chat-header">
 
-<h2>💬 Chat with Atharva Kumavat</h2>
+    <!-- TOPBAR -->
+
+    <div class="topbar">
+
+        <div class="search">
+
+            <input
+                type="text"
+                placeholder="Search Skills..."
+            >
+
+        </div>
+
+
+        <div class="top-right">
+
+            <i class="fa-regular fa-bell notification"></i>
+
+
+            <div class="user-info">
+
+                <img
+                    src="image/dhruv.png"
+                    alt="Profile"
+                >
+
+                <div>
+
+                    <h4>Dhruv</h4>
+
+                    <span>Cloud Learner</span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- CHAT AREA -->
+
+    <div class="chat-page">
+
+
+        <!-- CONVERSATIONS -->
+
+        <div class="conversation-panel">
+
+
+            <div class="conversation-header">
+
+                <div>
+
+                    <h1>Messages</h1>
+
+                    <p>Your skill exchange conversations</p>
+
+                </div>
+
+                <button class="new-chat">
+
+                    <i class="fa-solid fa-pen"></i>
+
+                </button>
+
+            </div>
+
+
+
+            <!-- CHAT SEARCH -->
+
+            <div class="chat-search">
+
+                <i class="fa-solid fa-magnifying-glass"></i>
+
+                <input
+                    type="text"
+                    placeholder="Search conversations..."
+                >
+
+            </div>
+
+
+
+            <!-- AMAN -->
+
+            <div class="conversation active-chat" onclick="openChat('aman')">
+
+                <div class="chat-avatar">
+
+                    <img
+                        src="image/aman.jpg"
+                        alt="Aman"
+                    >
+
+                    <span class="online-dot"></span>
+
+                </div>
+
+
+                <div class="conversation-info">
+
+                    <div class="conversation-name">
+
+                        <h3>Aman Sharma</h3>
+
+                        <span>10:42 AM</span>
+
+                    </div>
+
+                    <p>Let's start learning Python tomorrow!</p>
+
+                    <span class="conversation-skill">
+                        Python
+                    </span>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- ATHARVA -->
+
+                <div class="conversation" onclick="openChat('atharva')"> 
+
+                    <img
+                        src="image/atharva.jpg"
+                        alt="Atharva"
+                    >
+
+                    <span class="online-dot"></span>
+
+                </div>
+
+
+                <div class="conversation-info">
+
+                    <div class="conversation-name">
+
+                        <h3>Atharva Kumavat</h3>
+
+                        <span>Yesterday</span>
+
+                    </div>
+
+                    <p>I'll teach you AWS basics this weekend.</p>
+
+                    <span class="conversation-skill">
+                        Cloud Computing
+                    </span>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+
+        <!-- CHAT WINDOW -->
+
+        <div class="chat-window">
+
+
+            <!-- CHAT HEADER -->
+
+            <div class="chat-user-header">
+
+
+                <div class="chat-user">
+
+                    <div class="chat-avatar large">
+
+                    <img
+                    src="image/aman.jpg"
+                    alt="Aman"
+                >
+
+                        <span class="online-dot"></span>
+
+                    </div>
+
+
+                    <div>
+
+                        <h2 id="chatName">Aman Sharma</h2>
+
+                        <span class="online-text">
+                            <i class="fa-solid fa-circle"></i>
+                            <span id="chatStatus">Online</span>
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <div class="chat-actions">
+
+                    <button>
+
+                        <i class="fa-solid fa-phone"></i>
+
+                    </button>
+
+                    <button>
+
+                        <i class="fa-solid fa-video"></i>
+
+                    </button>
+
+                    <button>
+
+                        <i class="fa-solid fa-ellipsis-vertical"></i>
+
+                    </button>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- MESSAGES -->
+
+            <div class="messages" id="messages">
+
+
+                <div class="chat-date">
+
+                    Today
+
+                </div>
+
+
+                <!-- RECEIVED -->
+
+                <div class="message received">
+
+                    <p>
+                        Hey Dhruv! 👋
+                    </p>
+
+                    <span>10:35 AM</span>
+
+                </div>
+
+
+                <div class="message received">
+
+                    <p>
+                        Let's start learning Python tomorrow!
+                    </p>
+
+                    <span>10:36 AM</span>
+
+                </div>
+
+
+                <!-- SENT -->
+
+                <div class="message sent">
+
+                    <p>
+                        Sure! Sounds good 😄
+                    </p>
+
+                    <span>10:38 AM</span>
+
+                </div>
+
+
+                <div class="message sent">
+
+                    <p>
+                        What topic should we start with?
+                    </p>
+
+                    <span>10:39 AM</span>
+
+                </div>
+
+
+                <!-- RECEIVED -->
+
+                <div class="message received">
+
+                    <p>
+                        Let's start with Python functions.
+                    </p>
+
+                    <span>10:42 AM</span>
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- MESSAGE INPUT -->
+
+            <div class="message-input">
+
+
+                <button class="attachment">
+
+                    <i class="fa-solid fa-paperclip"></i>
+
+                </button>
+
+
+                <input
+                    type="text"
+                    placeholder="Type a message..."
+                >
+
+
+                <button class="emoji">
+
+                    <i class="fa-regular fa-face-smile"></i>
+
+                </button>
+
+
+                <button class="send">
+
+                    <i class="fa-solid fa-paper-plane"></i>
+
+                </button>
+
+
+            </div>
+
+
+        </div>
+
+    </div>
 
 </div>
+<script>
 
-<div class="chat-box">
-
-<div class="message received">
-
-Hi Dhruv! Can you teach me HTML?
-
-</div>
-
-<div class="message sent">
-
-Sure! Can you teach me Python?
-
-</div>
-
-<div class="message received">
-
-Yes, definitely.
-
-</div>
-
-<div class="message sent">
-
-Great! Let's start tomorrow.
-
-</div>
-
-</div>
-
-<div class="chat-input">
-
-<input type="text" placeholder="Type your message...">
-
-<button>Send</button>
-
-</div>
-
-</div>
+    function openChat(person) {
+    
+        const chatName = document.getElementById("chatName");
+        const chatImage = document.getElementById("chatImage");
+        const messages = document.getElementById("messages");
+    
+        const conversations = document.querySelectorAll(".conversation");
+    
+        conversations.forEach(function(conversation) {
+            conversation.classList.remove("active-chat");
+        });
+    
+    
+        if (person === "atharva") {
+    
+            chatName.textContent = "Atharva Kumavat";
+    
+            chatImage.src = "image/atharva.jpg";
+            chatImage.alt = "Atharva";
+    
+    
+            messages.innerHTML = `
+    
+                <div class="chat-date">
+                    Today
+                </div>
+    
+                <div class="message received">
+    
+                    <p>
+                        Hey Dhruv! 👋
+                    </p>
+    
+                    <span>9:20 AM</span>
+    
+                </div>
+    
+    
+                <div class="message received">
+    
+                    <p>
+                        I'll teach you AWS basics this weekend.
+                    </p>
+    
+                    <span>9:22 AM</span>
+    
+                </div>
+    
+    
+                <div class="message sent">
+    
+                    <p>
+                        Perfect! I'm really interested in AWS.
+                    </p>
+    
+                    <span>9:25 AM</span>
+    
+                </div>
+    
+    
+                <div class="message sent">
+    
+                    <p>
+                        Should we start with EC2?
+                    </p>
+    
+                    <span>9:27 AM</span>
+    
+                </div>
+    
+    
+                <div class="message received">
+    
+                    <p>
+                        Yes, let's start with EC2 and then move to S3.
+                    </p>
+    
+                    <span>9:30 AM</span>
+    
+                </div>
+    
+            `;
+    
+            conversations[1].classList.add("active-chat");
+    
+        }
+    
+    
+        else if (person === "aman") {
+    
+            chatName.textContent = "Aman Sharma";
+    
+            chatImage.src = "image/aman.jpg";
+            chatImage.alt = "Aman";
+    
+    
+            messages.innerHTML = `
+    
+                <div class="chat-date">
+                    Today
+                </div>
+    
+    
+                <div class="message received">
+    
+                    <p>
+                        Hey Dhruv! 👋
+                    </p>
+    
+                    <span>10:35 AM</span>
+    
+                </div>
+    
+    
+                <div class="message received">
+    
+                    <p>
+                        Let's start learning Python tomorrow!
+                    </p>
+    
+                    <span>10:36 AM</span>
+    
+                </div>
+    
+    
+                <div class="message sent">
+    
+                    <p>
+                        Sure! Sounds good 😄
+                    </p>
+    
+                    <span>10:38 AM</span>
+    
+                </div>
+    
+    
+                <div class="message sent">
+    
+                    <p>
+                        What topic should we start with?
+                    </p>
+    
+                    <span>10:39 AM</span>
+    
+                </div>
+    
+    
+                <div class="message received">
+    
+                    <p>
+                        Let's start with Python functions.
+                    </p>
+    
+                    <span>10:42 AM</span>
+    
+                </div>
+    
+            `;
+    
+            conversations[0].classList.add("active-chat");
+    
+        }
+    
+    }
+    
+    </script>
 
 </body>
 

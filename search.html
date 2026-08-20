@@ -9,7 +9,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 <link rel="stylesheet" href="css/layout.css">
-<link rel="stylesheet" href="css/dashboard.css">
+<link rel="stylesheet" href="css/search.css">
 </head>
 
 <body>
@@ -44,7 +44,9 @@
 
 <li><a href="profile-dhruv.html"><i class="fa-solid fa-user"></i> My Profile</a></li>
 
-<li><a href="#"><i class="fa-solid fa-gear"></i> Settings</a></li>
+<li><a href="settings.html">
+    <i class="fa-solid fa-gear"></i> Settings
+</a></li>
 
 </ul>
 
@@ -60,7 +62,6 @@
 
 </div>
 
-</ul>
 
 </div>
 
@@ -96,38 +97,311 @@
 
 </div>
 <div class="content"> 
-<h1>Search Skills</h1>
+    <div class="hero-search">
 
-<p>Discover people and exchange skills with other learners.</p>
-
-<div class="cards">
-
-    <div class="card">
-
-        <h2>Atharva Kumavat</h2>
-
-        <p><b>Teaches:</b> Python, Java</p>
-
-        <p><b>Wants:</b> HTML, CSS</p>
-
-        <button onclick="window.location.href='profile-atharva.html'">
-            View Profile
-        </button>
-
+        <div class="hero-left">
+    
+            <span class="hero-tag">
+                🚀 SkillConnect Community
+            </span>
+    
+            <h1>
+                Find Your <span>Perfect Learning Partner</span>
+            </h1>
+    
+            <p>
+                Learn faster by connecting with skilled people,
+                exchanging knowledge and building meaningful
+                learning partnerships.
+            </p>
+    
+        </div>
+    
+        <div class="hero-right">
+    
+            <div class="hero-stat">
+    
+                <h2>2.5K+</h2>
+    
+                <span>Members</span>
+    
+            </div>
+    
+            <div class="hero-stat">
+    
+                <h2>850+</h2>
+    
+                <span>Skills</span>
+    
+            </div>
+    
+            <div class="hero-stat">
+    
+                <h2>4.9★</h2>
+    
+                <span>Average Rating</span>
+    
+            </div>
+    
+        </div>
+    
     </div>
+    <div class="floating-search">
+    <div class="search-section">
+    
+        <div class="search-box">
+    
+            <i class="fa-solid fa-magnifying-glass"></i>
+    
+            <input
+                type="text"
+                placeholder="Search skills, people or technologies..."
+            >
+    </div>
+        </div>
+        
+        <div class="filters">
+    
+            <select>
+                <option>All Skills</option>
+                <option>Programming</option>
+                <option>Cloud Computing</option>
+                <option>Design</option>
+                <option>Photography</option>
+            </select>
+    
+            <select>
+                <option>All Ratings</option>
+                <option>⭐ 5 Stars</option>
+                <option>⭐ 4+ Stars</option>
+            </select>
+    
+        </div>
+    
+    </div>
+    
+    <h2 class="section-title">
+    🔥 Trending Skills
+    </h2>
+    
+    <div class="skill-chips">
 
-    <div class="card">
+        <span class="html">🌐 HTML</span>
+        
+        <span class="css">🎨 CSS</span>
+        
+        <span class="js">⚡ JavaScript</span>
+        
+        <span class="python">🐍 Python</span>
+        
+        <span class="aws">☁ AWS</span>
+        
+        <span class="docker">🐳 Docker</span>
+        
+        <span class="linux">🐧 Linux</span>
+        
+        <span class="react">⚛ React</span>
+        
+        </div>
+    
+    <h2 class="section-title">
+    ⭐ Featured Learners
+    </h2>
+    
+        <div class="cards">
 
-        <h2>Aman Sharma</h2>
-
-        <p><b>Teaches:</b> Photography, Lightroom</p>
-
-        <p><b>Wants:</b> Python</p>
-
-        <button onclick="window.location.href='profile-aman.html'">
-            View Profile
-        </button>
-
+            <!-- Card 1 -->
+        
+            <div class="card">
+        
+                <div class="card-top">
+        
+                    <span class="status">🟢 Online</span>
+        
+                    <span class="rating-badge">⭐ 4.9</span>
+        
+                </div>
+        
+                <div class="user">
+        
+                    <div class="avatar">
+                        AK
+                    </div>
+        
+                    <div>
+        
+                        <h2>Atharva Kumavat</h2>
+        
+                        <p>Top Mentor</p>
+        
+                    </div>
+        
+                </div>
+        
+                <div class="skill-section">
+        
+                    <strong>💻 Teaches</strong>
+        
+                    <div class="chips">
+        
+                        <span>Python</span>
+        
+                        <span>Java</span>
+        
+                        <span>AWS</span>
+        
+                    </div>
+        
+                </div>
+        
+                <div class="skill-section">
+        
+                    <strong>🎯 Wants</strong>
+        
+                    <div class="chips">
+        
+                        <span>HTML</span>
+        
+                        <span>CSS</span>
+        
+                    </div>
+        
+                </div>
+        
+                <div class="stats-row">
+        
+                    <div>
+        
+                        <h3>124</h3>
+        
+                        <span>Exchanges</span>
+        
+                    </div>
+        
+                    <div>
+        
+                        <h3>48</h3>
+        
+                        <span>Connections</span>
+        
+                    </div>
+        
+                </div>
+        
+                <div class="buttons">
+        
+                    <button onclick="location.href='profile-atharva.html'">
+        
+                        👤 View Profile
+        
+                    </button>
+        
+                    <button class="request-btn">
+        
+                        🤝 Request
+        
+                    </button>
+        
+                </div>
+        
+            </div>
+        
+        
+        
+            <!-- Card 2 -->
+        
+            <div class="card">
+        
+                <div class="card-top">
+        
+                    <span class="status">🟢 Online</span>
+        
+                    <span class="rating-badge">⭐ 4.8</span>
+        
+                </div>
+        
+                <div class="user">
+        
+                    <div class="avatar">
+                        AS
+                    </div>
+        
+                    <div>
+        
+                        <h2>Aman Sharma</h2>
+        
+                        <p>Fast Learner</p>
+        
+                    </div>
+        
+                </div>
+        
+                <div class="skill-section">
+        
+                    <strong>💻 Teaches</strong>
+        
+                    <div class="chips">
+        
+                        <span>Photography</span>
+        
+                        <span>Lightroom</span>
+        
+                    </div>
+        
+                </div>
+        
+                <div class="skill-section">
+        
+                    <strong>🎯 Wants</strong>
+        
+                    <div class="chips">
+        
+                        <span>Python</span>
+        
+                    </div>
+        
+                </div>
+        
+                <div class="stats-row">
+        
+                    <div>
+        
+                        <h3>92</h3>
+        
+                        <span>Exchanges</span>
+        
+                    </div>
+        
+                    <div>
+        
+                        <h3>35</h3>
+        
+                        <span>Connections</span>
+        
+                    </div>
+        
+                </div>
+        
+                <div class="buttons">
+        
+                    <button onclick="location.href='profile-aman.html'">
+        
+                        👤 View Profile
+        
+                    </button>
+        
+                    <button class="request-btn">
+        
+                        🤝 Request
+        
+                    </button>
+        
+                </div>
+        
+            </div>
+        
+        </div>
+    
 
 
 </div>

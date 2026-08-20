@@ -2,9 +2,9 @@
 
 .sidebar{
 
-    width:220px;
+    width:260px;
     
-    height:calc(100vh - 40px);
+    height: 100vh;
     
     position:fixed;
     
@@ -28,13 +28,13 @@
     
     flex-direction:column;
     
-    overflow:hidden;
+    overflow-y: auto;
     
     }
 
 .sidebar h2{
 
-font-size:28px;
+font-size:22px;
 
 font-weight:700;
 
@@ -53,15 +53,15 @@ letter-spacing:.5px;
 
     text-align:center;
     
-    margin-bottom:35px;
+    margin-bottom:18px;
     
     }
     
     .logo-icon{
     
-    width:65px;
+    width:55px;
     
-    height:65px;
+    height:55px;
     
     margin:0 auto 15px;
     
@@ -85,7 +85,7 @@ letter-spacing:.5px;
     
     .logo p{
     
-    font-size:13px;
+    font-size:11px;
     
     opacity:.85;
     
@@ -107,10 +107,8 @@ letter-spacing:.5px;
     flex-direction:column;
     
     gap:10px;
-    
-    flex:1;
-    
-    }
+ 
+   }
     
     .sidebar ul li{
     
@@ -130,7 +128,7 @@ letter-spacing:.5px;
     
     gap:15px;
     
-    padding:14px 18px;
+    padding:11px 18px;
     
     color:white;
     
@@ -298,4 +296,31 @@ letter-spacing:.5px;
 
 .content{
     padding:30px;
+}
+/* Sidebar Footer */
+
+.sidebar-footer{
+    margin-top:auto;
+    padding-top:15px;
+    border-top:1px solid rgba(255,255,255,0.1);
+}
+
+.sidebar-footer a{
+    display:flex;
+    align-items:center;
+    gap:15px;
+    padding:12px 18px;
+    color:white;
+    text-decoration:none;
+    border-radius:18px;
+    transition:.3s;
+}
+
+.sidebar-footer a:hover{
+    background:rgba(255,255,255,.18);
+}
+
+.sidebar-footer i{
+    width:22px;
+    text-align:center;
 }

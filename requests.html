@@ -2,106 +2,357 @@
 <html lang="en">
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Requests - SkillConnect</title>
 
-<title>Requests - SkillConnect</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-
-<link rel="stylesheet" href="css/requests.css">
-
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/requests.css">
 </head>
 
 <body>
 
-<div class="sidebar">
+    <!-- SIDEBAR -->
+    <div class="sidebar">
 
-<h2>SkillConnect</h2>
+        <div class="logo">
 
-<ul>
+            <div class="logo-icon">
+                <i class="fa-solid fa-link"></i>
+            </div>
 
-<li><a href="dashboard.html"><i class="fa-solid fa-house"></i> Dashboard</a></li>
+            <h2>SkillConnect</h2>
 
-<li><a href="#"><i class="fa-solid fa-magnifying-glass"></i> Search Skills</a></li>
+            <span>Skill Exchange Platform</span>
 
-<li><a href="requests.html"><i class="fa-solid fa-envelope"></i> Requests</a></li>
+        </div>
 
-<li><a href="chat.html"><i class="fa-solid fa-comments"></i> Chat</a></li>
+        <ul>
 
-<li><a href="profile-dhruv.html">
-    <i class="fa-solid fa-user"></i> My Profile
-</a><i class="fa-solid fa-user"></i> My Profile</a></li>
+            <li>
+                <a href="dashboard.html">
+                    <i class="fa-solid fa-house"></i>
+                    Dashboard
+                </a>
+            </li>
 
-<li><a href="#"><i class="fa-solid fa-gear"></i> Settings</a></li>
+            <li>
+                <a href="search.html">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    Search Skills
+                </a>
+            </li>
 
-<li><a href="index.html"><i class="fa-solid fa-right-from-bracket"></i> Logout</a></li>
+            <li class="active">
+                <a href="requests.html">
+                    <i class="fa-solid fa-envelope"></i>
+                    Requests
+                </a>
+            </li>
 
-</ul>
+            <li>
+                <a href="chat.html">
+                    <i class="fa-solid fa-comments"></i>
+                    Chat
+                </a>
+            </li>
 
-</div>
+            <li>
+                <a href="profile-dhruv.html">
+                    <i class="fa-solid fa-user"></i>
+                    My Profile
+                </a>
+            </li>
 
-<div class="main">
+            <li>
+                <a href="settings.html">
+                    <i class="fa-solid fa-gear"></i>
+                    Settings
+                </a>
+            </li>
 
-<div class="topbar">
+        </ul>
 
-<h2>Skill Exchange Requests</h2>
+        <div class="sidebar-footer">
 
-<div class="welcome">
+            <a href="index.html">
+                <i class="fa-solid fa-right-from-bracket"></i>
+                Logout
+            </a>
 
-Welcome, Dhruv 👋
+        </div>
 
-</div>
+    </div>
 
-</div>
 
-<div class="content">
+    <!-- MAIN -->
+    <div class="main">
 
-<h2>Incoming Requests</h2>
+        <!-- TOPBAR -->
+        <div class="topbar">
 
-<div class="card">
+            <div class="search">
+                <input type="text" placeholder="Search Skills...">
+            </div>
 
-<h3>👨 Atharva Kumavat</h3>
+            <div class="top-right">
 
-<p><b>Can Teach:</b> Python, Java</p>
+                <i class="fa-regular fa-bell notification"></i>
 
-<p><b>Wants To Learn:</b> HTML, CSS</p>
+                <div class="user-info">
 
-<div class="buttons">
+                    <img src="image/dhruv.png" alt="Profile">
 
-<button class="accept" onclick="window.location.href='chat.html'">
-Accept
-</button>
+                    <div>
+                        <h4>Dhruv</h4>
+                        <span>Cloud Learner</span>
+                    </div>
 
-<button class="reject">Reject</button>
+                </div>
 
-</div>
+            </div>
 
-</div>
+        </div>
 
-<h2 style="margin-top:35px;">Outgoing Requests</h2>
 
-<div class="card">
+        <!-- CONTENT -->
+        <div class="content">
 
-<h3>👨 Aman Sharma</h3>
+            <div class="page-heading">
 
-<p><b>Status:</b> Pending</p>
+                <div>
+                    <h1>Requests</h1>
 
-<p><b>Requested Skill:</b> Python</p>
+                    <p>
+                        Manage your incoming and outgoing skill exchange requests.
+                    </p>
+                </div>
 
-<button class="pending">Pending</button>
+                <div class="request-icon">
+                    <i class="fa-solid fa-envelope-open-text"></i>
+                </div>
 
-</div>
+            </div>
 
-</div>
 
-</div>
+            <!-- STATS -->
+            <div class="request-stats">
+
+                <div class="stat-card">
+
+                    <div class="stat-icon incoming-icon">
+                        <i class="fa-solid fa-arrow-down"></i>
+                    </div>
+
+                    <div>
+                        <h2>1</h2>
+                        <span>Incoming Requests</span>
+                    </div>
+
+                </div>
+
+
+                <div class="stat-card">
+
+                    <div class="stat-icon sent-icon">
+                        <i class="fa-solid fa-arrow-up"></i>
+                    </div>
+
+                    <div>
+                        <h2>1</h2>
+                        <span>Sent Requests</span>
+                    </div>
+
+                </div>
+
+
+                <div class="stat-card">
+
+                    <div class="stat-icon accepted-icon">
+                        <i class="fa-solid fa-circle-check"></i>
+                    </div>
+
+                    <div>
+                        <h2>0</h2>
+                        <span>Accepted</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- INCOMING -->
+            <div class="request-section">
+
+                <div class="section-title">
+
+                    <div>
+                        <h2>Incoming Requests</h2>
+                        <p>People who want to exchange skills with you.</p>
+                    </div>
+
+                    <span class="count-badge">1 Request</span>
+
+                </div>
+
+
+                <div class="request-card">
+
+                    <div class="person">
+
+                        <img src="image/aman.jpg" alt="Aman Sharma">
+
+                        <div class="person-info">
+
+                            <h3>Aman Sharma</h3>
+
+                            <span class="online">
+                                <i class="fa-solid fa-circle"></i>
+                                Online
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="request-details">
+
+                        <div class="request-type">
+                            <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                            Skill Exchange Request
+                        </div>
+
+                        <p>
+                            <strong>Wants to learn:</strong>
+                            Python
+                        </p>
+
+                        <p>
+                            <strong>Can teach:</strong>
+                            Photography
+                        </p>
+
+                    </div>
+
+
+                    <div class="request-status">
+
+                        <span class="status pending-status">
+                            Pending
+                        </span>
+
+                        <div class="request-actions">
+
+                            <button class="accept">
+                                <i class="fa-solid fa-check"></i>
+                                Accept
+                            </button>
+
+                            <button class="decline">
+                                <i class="fa-solid fa-xmark"></i>
+                                Decline
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- SENT -->
+            <div class="request-section">
+
+                <div class="section-title">
+
+                    <div>
+                        <h2>Sent Requests</h2>
+                        <p>Requests you have sent to other learners.</p>
+                    </div>
+
+                    <span class="count-badge">1 Request</span>
+
+                </div>
+
+
+                <div class="request-card">
+
+                    <div class="person">
+
+                        <img src="image/atharva.jpg" alt="Atharva Kumavat">
+
+                        <div class="person-info">
+
+                            <h3>Atharva Kumavat</h3>
+
+                            <span class="online">
+                                <i class="fa-solid fa-circle"></i>
+                                Online
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="request-details">
+
+                        <div class="request-type">
+                            <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                            Skill Exchange Request
+                        </div>
+
+                        <p>
+                            <strong>You want to learn:</strong>
+                            Cloud Computing
+                        </p>
+
+                        <p>
+                            <strong>Atharva can teach:</strong>
+                            Python, Java
+                        </p>
+
+                    </div>
+
+
+                    <div class="request-status">
+
+                        <span class="status pending-status">
+                            Pending
+                        </span>
+
+                        <div class="request-actions">
+
+                            <button class="pending">
+                                <i class="fa-regular fa-clock"></i>
+                                Pending
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
 
 </body>
 

@@ -16,7 +16,7 @@ body{
 
     width:220px;
     
-    height:calc(100vh - 40px);
+    height:100vh;
     
     position:fixed;
     
@@ -30,7 +30,7 @@ body{
     
     border-radius:28px;
     
-    padding:25px 18px;
+    padding:18px 18px;
     
     color:white;
     
@@ -40,7 +40,8 @@ body{
     
     flex-direction:column;
     
-    overflow:hidden;
+    overflow-y:auto;
+    overflow-x:hidden;
     
     }
 
