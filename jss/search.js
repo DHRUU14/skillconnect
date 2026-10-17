@@ -1,20 +1,30 @@
-const searchInput = document.getElementById("searchInput");
-const cards = document.querySelectorAll(".card");
 
-searchInput.addEventListener("keyup", function () {
+document.addEventListener("DOMContentLoaded", function () {
+    const mainInput = document.getElementById("searchInput");
+    const topInput = document.getElementById("topSearchInput");
+    const cards = document.querySelectorAll(".cards .card");
 
-    const value = searchInput.value.toLowerCase();
+    function filterCards(value) {
+        value = value.trim().toLowerCase();
 
-    cards.forEach(card => {
+        cards.forEach(function (card) {
+            const text = card.innerText.toLowerCase();
+            card.style.display = text.includes(value) ? "" : "none";
+        });
+    }
 
-        const text = card.innerText.toLowerCase();
+    function connectSearch(input, otherInput) {
+        if (!input) return;
 
-        if (text.includes(value)) {
-            card.style.display = "block";
-        } else {
-            card.style.display = "none";
-        }
+        input.addEventListener("input", function () {
+            if (otherInput) {
+                otherInput.value = input.value;
+            }
 
-    });
+            filterCards(input.value);
+        });
+    }
 
+    connectSearch(mainInput, topInput);
+    connectSearch(topInput, mainInput);
 });

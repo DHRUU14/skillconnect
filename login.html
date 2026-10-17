@@ -91,19 +91,33 @@ button:hover{
 
 <p>Welcome Back 👋</p>
 
-<form>
 
-<label>Email</label>
-<input type="email" placeholder="Enter your email">
+<form id="loginForm">
 
-<label>Password</label>
-<input type="password" placeholder="Enter your password">
+    <label>Email</label>
+    <input
+        type="email"
+        id="email"
+        placeholder="Enter your email"
+        autocomplete="email"
+        required
+    >
 
-<a href="dashboard.html">
-<button type="button">Login</button>
-</a>
+    <label>Password</label>
+    <input
+        type="password"
+        id="password"
+        placeholder="Enter your password"
+        autocomplete="current-password"
+        required
+    >
+
+    <p id="loginMessage" role="status" aria-live="polite"></p>
+
+    <button type="submit" id="loginButton">Login</button>
 
 </form>
+
 
 <div class="bottom-text">
 Don't have an account?
@@ -111,6 +125,10 @@ Don't have an account?
 </div>
 
 </div>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="jss/supabase.js"></script>
+<script src="jss/login.js"></script>
 
 </body>
 </html>
